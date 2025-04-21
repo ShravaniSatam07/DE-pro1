@@ -1,0 +1,17 @@
+{
+	"name": "external_table",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL DATA SOURCE source_silver\nWITH\n(\n    LOCATION='https://shravastorage1.blob.core.windows.net/silver',\n    CREDENTIAL=synapse_cred\n)\nCREATE EXTERNAL DATA SOURCE sink_gold\nWITH\n(\n    LOCATION='https://shravastorage1.blob.core.windows.net/gold',\n    CREDENTIAL=synapse_cred\n)\n\n--Create an external file format for PARQUET files.\nCREATE EXTERNAL FILE FORMAT file_format_name\nWITH (\n         FORMAT_TYPE = PARQUET,\n         DATA_COMPRESSION ='org.apache.hadoop.io.compress.SnappyCodec'\n      \n    )\n\n --CREATE EXTERNAL TABLE OF SALES   \n\n CREATE EXTERNAL TABLE gold.extable\n WITH\n (\n    LOCATION='EXTABLE',\n    DATA_SOURCE =sink_gold,\n    FILE_FORMAT=file_format_name\n\n )\n \n AS select * from gold.Sales",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapses",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

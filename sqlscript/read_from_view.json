@@ -1,0 +1,17 @@
+{
+	"name": "read_from_view",
+	"properties": {
+		"content": {
+			"query": "SELECT * FROM gold.Customer",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapses",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
