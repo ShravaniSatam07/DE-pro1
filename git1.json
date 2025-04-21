@@ -1,0 +1,70 @@
+[
+    {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Calendar.csv",
+        "p_filepath":"Calendar",
+        "p_filepath_dynamic" :"Calendar.csv"
+
+    },
+    {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Customers.csv",
+        "p_filepath":"Customers",
+        "p_filepath_dynamic" :"Customers.csv"
+
+    },
+    {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Product_Categories.csv",
+        "p_filepath":"Categorie",
+        "p_filepath_dynamic" :"Categorie.csv"
+    },
+
+     {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Product_Subcategories.csv",
+        "p_filepath":"Subcategories",
+        "p_filepath_dynamic" :"Subcategories.csv"
+
+     },
+     {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Products.csv",
+        "p_filepath":"Products",
+        "p_filepath_dynamic" :"Products.csv"
+     },
+     {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Returns.csv",
+        "p_filepath":"Return",
+        "p_filepath_dynamic" :"Return.csv"
+     },
+     {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Sales_2015.csv",
+        "p_filepath":"Sales_2015",
+        "p_filepath_dynamic" :"Sales_2015.csv"
+     },
+     {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Sales_2016.csv",
+        "p_filepath":"Sales_2016",
+        "p_filepath_dynamic" :"Sales_2016.csv"
+
+     },
+     {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Sales_2017.csv",
+        "p_filepath":"Sales_2017",
+        "p_filepath_dynamic" :"Sales_2017.csv"
+     },
+
+     {
+        "p_rel_ur":"ShravaniSatam07/azdaeng-dataset/refs/heads/main/data/AdventureWorks_Territories.csv",
+        "p_filepath":"Territories",
+        "p_filepath_dynamic" :"Territories.csv"
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+]
