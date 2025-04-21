@@ -1,0 +1,9 @@
+{
+	"name": "shravafactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b4c47367-8df4-415e-85a0-9ad5ffa043bc",
+		"tenantId": "fa2a46ed-7ecf-4676-8fe4-8461a95b91dc"
+	}
+}
