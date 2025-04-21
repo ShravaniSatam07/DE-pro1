@@ -1,0 +1,17 @@
+{
+	"name": "read_data",
+	"properties": {
+		"content": {
+			"query": "SELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Calendar',\n        FORMAT ='PARQUET'\n    )as query1",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapses",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

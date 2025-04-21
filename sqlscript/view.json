@@ -1,0 +1,17 @@
+{
+	"name": "view",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW gold.Calendar\nAS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Calendar/',\n        FORMAT ='PARQUET'\n    )as Q1\n\nCREATE VIEW gold.Customer\nAS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Customer/',\n        FORMAT ='PARQUET'\n    )as Q2\n\nCREATE VIEW gold.Products\nAS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Products/',\n        FORMAT ='PARQUET'\n    )as Q3\n\nCREATE VIEW gold.Retu\nAS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Returns',\n        FORMAT ='PARQUET'\n    )as Q4\n\nCREATE VIEW gold.Sales \nAS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Sales',\n        FORMAT ='PARQUET'\n    )as Q5\n\nCREATE VIEW gold.Sub\nAS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Subcategories',\n        FORMAT ='PARQUET'\n    )as Q6\n\nCREATE VIEW gold.Ter\nAS\nSELECT\n*\nFROM\n    OPENROWSET(\n        BULK'https://shravastorage1.blob.core.windows.net/silver/Territories',\n        FORMAT ='PARQUET'\n    )as Q7\n\n        \n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "synapses",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
